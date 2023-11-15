@@ -1,0 +1,168 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.seccion-1 {
+    background-color: rgb(12, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.seccion-2 {
+    background-color: black;
+    width: 100%;
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 203, 162);
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+
+.img1 {
+    width: 400px;
+}
+
+.img2 {
+    width: 100%;
+}
+
+#parrafo2 {
+    margin-right: 50px;
+}
+
+h1 {
+    display: flex;
+    color: rgb(124, 127, 201);
+    justify-content: center;
+}
+
+h3 {
+    background-color: rgb(208, 59, 39);
+}
+
+p {
+    color: rgb(9, 140, 140);
+}
+
+h2 {
+    color: rgb(235, 44, 88);
+}
+
+ul {
+    display: flex;
+    gap: 1.1em;
+    ;
+}
+
+ol,
+ul {
+    font-weight: bold;
+    list-style: none;
+}
+
+.cora i {
+    position: fixed;
+    bottom: 32px;
+    right: 29px;
+    color: rgb(225, 0, 245);
+}
+
+i {
+    padding: 10px;
+    color: rgb(255, 0, 128);
+    font-size: 300%;
+}
+
+main {
+    margin: 20px;
+
+}
+
+footer {
+    background-color: rgb(179, 149, 149);
+    width: 100%;
+}
+
+.inicio {
+    padding: 2em;
+    margin: 0;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    body {
+        background-color: aqua;
+    }
+
+    .acerca-imagen {
+        margin-bottom: 40px;
+    }
+
+    .fuente-acento {
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: blanchedalmond;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+check :checked ~ ul{
+left: 0%;
+display: block;
+}
+
+
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50pc 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+
+
+}
